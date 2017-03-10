@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "663860357628",
+    "firebase_url": "https://nandaexample-fe25d.firebaseio.com",
+    "project_id": "nandaexample-fe25d",
+    "storage_bucket": "nandaexample-fe25d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663860357628:android:9f3b801bf0c3a405",
+        "android_client_info": {
+          "package_name": "com.nanda.onesignalexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663860357628-pa5dcuunbkujrdcmgt49au9dl0bdakg2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nanda.onesignalexample",
+            "certificate_hash": "6027d4f4ca74744c4507d8e3329cb2a0a1d82d9f"
+          }
+        },
+        {
+          "client_id": "663860357628-m8ar7jndmt4iojfpues6v0selbrck5ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBGoh68egsN91xmfaVVdOLJ8MuG49CdBM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663860357628-m8ar7jndmt4iojfpues6v0selbrck5ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

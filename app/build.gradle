@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion "25.0.2"
+  defaultConfig {
+    applicationId "com.nanda.onesignalexample"
+    minSdkVersion 15
+    targetSdkVersion 25
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    manifestPlaceholders = [onesignal_app_id: "cef0e9fb-2583-4b73-9990-3b1be9b19a5f",
+                            // Project number pulled from dashboard, local value is ignored.
+                            onesignal_google_project_number: "663860357628"]
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    exclude group: 'com.android.support', module: 'support-annotations'
+  })
+  compile 'com.android.support:appcompat-v7:25.2.0'
+  testCompile 'junit:junit:4.12'
+
+  compile 'com.onesignal:OneSignal:3.+@aar'
+  compile 'com.google.android.gms:play-services-gcm:10.2.0'
+  compile 'com.google.firebase:firebase-messaging:10.2.0'
+  compile "com.google.android.gms:play-services-location:10.2.0"
+
+
+}
+apply plugin: 'com.google.gms.google-services'
+
